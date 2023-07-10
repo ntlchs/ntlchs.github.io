@@ -1,9 +1,5 @@
-import { Bs0Square } from "react-icons/bs";
+const Test = () => {
+  return <div>Bla</div>;
+};
 
-export default function () {
-  return (
-    <div>
-      <Bs0Square />
-    </div>
-  );
-}
+export default Test;

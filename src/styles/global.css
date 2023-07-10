@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --white: #f5f5f5;
+    --black: #1a1110;
+  }
+}
+
+/* This is a fix for Iphones so these classes work */
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+
+  .max-h-screen {
+    max-height: -webkit-fill-available;
+  }
+
+  .min-h-screen {
+    min-height: -webkit-fill-available;
+  }
+}

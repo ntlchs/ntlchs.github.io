@@ -1,4 +1,4 @@
-import { PiEnvelope, PiGithubLogo, PiLinkedinLogo } from "react-icons/pi";
+import { PiEnvelope, PiGithubLogo, PiLinkedinLogo } from "react-icons/pi/index";
 
 function SocialIcon({
   title,

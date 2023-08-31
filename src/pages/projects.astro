@@ -1,11 +1,25 @@
 ---
+import ProjectCard from "@components/ProjectCard";
+import Title from "@components/Title";
 import PageLayout from "@layouts/PageLayout.astro";
 ---
 
 <PageLayout title="Natalia">
   <main class="items-center flex flex-col w-full">
-    <div>ViuMeuPet</div>
-    <div>Silvia's Design</div>
-    <div>Project 3</div>
+    <Title className="text-black">Projects</Title>
+    <div class="grid w-full tablet:grid-cols-2 gap-2xl">
+      <ProjectCard
+        imageSrc="/assets/images/viumeupet.png"
+        title="ViuMeuPet"
+        description="Website for..."
+        link="https://viumeupet.com.br"
+      />
+      <ProjectCard
+        imageSrc="/assets/images/silviasdesign.png"
+        title="Silvia's Design"
+        description="Website for..."
+        link="https://silviasdesign.com"
+      />
+    </div>
   </main>
 </PageLayout>

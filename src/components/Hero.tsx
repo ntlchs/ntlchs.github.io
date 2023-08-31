@@ -24,7 +24,7 @@ function Hero() {
           <Link variant="primary" href="/">
             Github
           </Link>
-          <Button variant="secondary">Download CV</Button>
+          <Button variant="secondary">Linkedin</Button>
         </div>
       </div>
       <img

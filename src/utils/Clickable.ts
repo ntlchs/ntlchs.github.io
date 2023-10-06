@@ -5,10 +5,10 @@ export const clickableClassName =
 
 export const clickableClassNamePrimary = twMerge(
   clickableClassName,
-  "bg-black text-primary-200 hover:shadow-lg"
+  "bg-primary text-white hover:shadow-lg"
 );
 
 export const clickableClassNameSecondary = twMerge(
   clickableClassName,
-  "bg-primary-200 border border-black hover:shadow-lg text-black bg-white"
+  "bg-primary border border-black hover:shadow-lg text-black bg-white"
 );

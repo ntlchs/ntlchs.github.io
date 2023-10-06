@@ -11,7 +11,7 @@ function SocialIcon({
 }) {
   return (
     <a href={url} className="flex flex-col gap-sm items-center justify-center">
-      <div className="text-primary-200 justify-center items-center flex flex-col aspect-square">
+      <div className="justify-center items-center flex flex-col aspect-square">
         <Icon size={30} />
       </div>
       <p className="text-xs">{title}</p>
@@ -21,7 +21,7 @@ function SocialIcon({
 
 function Footer() {
   return (
-    <footer className="contact w-full text-primary-200 bg-black p-md">
+    <footer className="contact w-full bg-primary saturate-50 bg-opacity-25 p-md">
       <div className="w-2/3 py-md tablet:py-xl tablet:max-w-[30dvw] justify-between mx-auto flex items-center flex-col">
         <div className="flex gap-lg tablet:gap-2xl">
           <SocialIcon title="Github" Icon={PiGithubLogo} url="/" />

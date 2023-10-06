@@ -30,9 +30,10 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
     colors: {
-      white: "#FBE5E9",
-      // black: "#17255A",
-      black: "#1D2ECC",
+      black: "#1f1f1f",
+      gray: "#808084",
+      white: "#fefefe",
+      primary: "#8870ff",
     },
     extend: {
       fontFamily: {
@@ -56,23 +57,6 @@ module.exports = {
         lg: "2.625rem", // 42px (26px * 1.618 ≈ 42)
         xl: "4.25rem", // 68px (42px * 1.618 ≈ 68)
         "2xl": "6.875rem", // 110px (68px * 1.618 ≈ 110)
-      },
-      colors: {
-        // 400
-        primary: {
-          50: "#fdf3f5",
-          100: "#fce7eb",
-          200: "#F6CFDC",
-          DEFAULT: "#f1abb9",
-          400: "#ea8299",
-          500: "#dd5677",
-          600: "#c83661",
-          700: "#a82851",
-          800: "#8d2449",
-          900: "#792244",
-          950: "#430e21",
-        },
-        // 200
       },
     },
   },

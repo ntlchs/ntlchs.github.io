@@ -13,7 +13,21 @@ export type Skill = {
   level: number;
 };
 
-const techSkills = {
+export type TechSkills = {
+  JavaScript: string;
+  TypeScript: string;
+  React: string;
+  Nodejs: string;
+  Sequelize: string;
+  PostgreSQL: string;
+  Git: string;
+  HTML: string;
+  CSS: string;
+  GoogleCloud: string;
+  Figma: string;
+};
+
+const techSkills: TechSkills = {
   JavaScript: "JavaScript",
   TypeScript: "TypeScript",
   React: "React",
@@ -23,8 +37,7 @@ const techSkills = {
   Git: "Git",
   HTML: "HTML",
   CSS: "CSS",
-  Vercel: "Vercel",
-  GoogleCloudPlatform: "Google Cloud Platform",
+  GoogleCloud: "Google Cloud",
   Figma: "Figma",
 };
 
@@ -117,12 +130,7 @@ export const experiences: { [key: string]: Experience } = {
       "SEO and performance optimization (web vitals)",
       "Version control using git and pull requests on GitHub",
     ],
-    technologies: [
-      techSkills.React,
-      techSkills.TypeScript,
-      techSkills.Git,
-      techSkills.Vercel,
-    ],
+    technologies: [techSkills.React, techSkills.TypeScript, techSkills.Git],
     started: "October 2023",
   },
 };

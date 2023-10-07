@@ -30,7 +30,7 @@ function Header() {
               <i className="text-[1.8rem] ph-fill ph-cursor"
               ></i>
             </Link>
-            <Link href="#contact">
+            <Link href="/contact">
               <i className="text-[1.8rem] ph-fill ph-envelope"
               ></i>
             </Link>

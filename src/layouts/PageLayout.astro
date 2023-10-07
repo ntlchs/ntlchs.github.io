@@ -1,0 +1,17 @@
+---
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Layout from "./Layout.astro";
+
+const { title } = Astro.props;
+---
+
+<Layout title={title}>
+  <Header />
+  <main class="w-full flex-grow">
+    <div class="flex tablet:max-w-7xl mx-auto py-md">
+      <slot />
+    </div>
+  </main>
+  <Footer />
+</Layout>

@@ -1,14 +1,14 @@
 import { twMerge } from "tailwind-merge";
 
 export const clickableClassName =
-  "font-bold px-md py-sm rounded-lg hover:saturate-150 cursor-pointer active:saturate-200 active:brightness-125 active:opacity-75";
+  "font-bold px-md py-sm flex gap-md items-center justify-center rounded-lg hover:scale-105 cursor-pointer active:scale-100 transition-all";
 
 export const clickableClassNamePrimary = twMerge(
   clickableClassName,
-  "bg-primary text-white hover:shadow-lg"
+  "bg-black text-white hover:shadow-lg"
 );
 
 export const clickableClassNameSecondary = twMerge(
   clickableClassName,
-  "bg-primary border border-black hover:shadow-lg text-black bg-white"
+  "border border-black hover:shadow-lg text-black bg-white"
 );

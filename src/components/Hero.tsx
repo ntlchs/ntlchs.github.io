@@ -1,5 +1,4 @@
-import Button from "./Button";
-import Link from "./Link";
+import { ProjectsLink } from "./Link";
 import Title from "./Title";
 
 function Hero() {
@@ -23,10 +22,7 @@ function Hero() {
           I am Natália, a full-stack web developer
         </h2>
         <div className="w-full flex gap-md tablet:gap-lg">
-          <Link variant="primary" href="/">
-            Github
-          </Link>
-          <Button variant="secondary">Linkedin</Button>
+          <ProjectsLink />
         </div>
       </div>
 

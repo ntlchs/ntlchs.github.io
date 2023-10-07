@@ -19,8 +19,8 @@ function Button({ children, icon, variant, ...props }: ButtonProps) {
         variant === "primary"
           ? clickableClassNamePrimary
           : variant === "secondary"
-          ? clickableClassNameSecondary
-          : clickableClassName
+            ? clickableClassNameSecondary
+            : clickableClassName
       }
     >
       <div className="w-full h-full flex gap-sm tablet:gap-md">

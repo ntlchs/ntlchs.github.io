@@ -1,9 +1,12 @@
 ---
 import AboutMeContainer from "@components/AboutMeContainer";
+import PageTitle from "@components/PageTitle";
 import PageLayout from "@layouts/PageLayout.astro";
 ---
 
 <PageLayout title="Natalia">
-  <AboutMeContainer />
+  <div class="items-center flex flex-col w-full">
+    <PageTitle>A little bit about me</PageTitle>
+    <AboutMeContainer />
+  </div>
 </PageLayout>
-@components/AboutMeContainer

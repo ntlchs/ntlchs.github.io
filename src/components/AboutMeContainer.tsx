@@ -1,7 +1,5 @@
-import { Experience, experiences } from "src/utils/personalInfo";
+import { Experience, contactInfo, experiences } from "src/utils/personalInfo";
 import { ProjectsLink } from "./Link";
-import PageTitle from "./PageTitle";
-
 
 const AboutMeItem = ({
     title,
@@ -27,14 +25,15 @@ const AboutMeItem = ({
 const AboutMeContainer = () => {
     return (
         <div className="w-full my-6">
-            <div className="items-center flex flex-col">
+            <div className="flex flex-col items-center justify-center">
 
-                <PageTitle>A little bit about me</PageTitle>
                 <div
-                    className="w-20 h-20 ring-4 ring-primary rounded-full mb-4 overflow-hidden"
+                    className="w-20 mx-auto h-20 ring-4 ring-primary rounded-full mb-4 overflow-hidden"
                 >
                     <img src="/images/me.jpg" alt="Natalia" />
                 </div>
+                <p className="font-semibold">{contactInfo.name}</p>
+                <p>{contactInfo.location}</p>
             </div>
 
             <ul className="list-disc px-12 space-y-3 my-6">

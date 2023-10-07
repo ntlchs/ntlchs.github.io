@@ -1,38 +1,44 @@
+import Link from "./Link";
+
 type ProjectInfo = {
-    imageSrc: string;
-    title: string;
-    description: string;
-    link: string;
-    technologies: string[];
-    started: string;
+	imageSrc: string;
+	title: string;
+	description: string;
+	link: string;
+	technologies: string[];
+	started: string;
 };
 
 const ProjectCard = ({ imageSrc, title, description, link, technologies, started }: ProjectInfo) => {
-    return (
-        <div className="flex flex-col md:flex-row p-md py-2xl overflow-hidden hover:scale-110">
-            {/* Image Section */}
-            <a href={link} target="_blank" rel="noopener noreferrer">
-                <img src={imageSrc} alt={title} className="object-cover rounded-lg w-full md:w-1/3" />
-            </a>
-
-            {/* Info Section */}
-            <div className="flex flex-col justify-between ml-0 md:ml-4 w-full md:w-2/3">
-                <div>
-                    <h3 className="text-xl font-bold">{title}</h3>
-                    <p className="text-sm">{description}</p>
-                    <ul>
-                        {technologies.map((tech, index) => (
-                            <li key={index}>{tech}</li>
-                        ))}
-                    </ul>
-                    <p className="text-xs">Started: {started}</p>
-                </div>
-                <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    Check it out
-                </a>
-            </div>
-        </div>
-    );
+	return (
+		<div className="flex max-w-4xl flex-col gap-lg tablet:flex-row p-md py-2xl items-center overflow-hidden">
+			<a href={link} target="_blank" rel="noopener noreferrer" className="relative flex items-center justify-center h-auto w-64 aspect-video">
+				<img src={imageSrc} alt={title} className="object-cover rounded-lg w-full" />
+			</a>
+			<div className="flex flex-col gap-lg justify-between ml-0 tablet:ml-4 w-full tablet:w-2/3">
+				<div className="flex flex-col gap-lg">
+					<div className="flex gap-md items-center">
+						<h1 className="text-sm font-medium">{title}</h1>
+						<span className="w-full h-[1px] bg-black"></span>
+					</div>
+					<div>
+						<p className="text-sm">{description}</p>
+						<p className="text-xs">{started}</p>
+					</div>
+					<ul className="flex flex-wrap gap-md">
+						{technologies.map((tech, index) => (
+							<li key={index} className="inline-block">{tech}</li>
+						))}
+					</ul>
+				</div>
+				<div className="flex">
+					<Link href={link} variant="secondary" blank rel="noopener noreferrer">
+						Check it out
+					</Link>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default ProjectCard;

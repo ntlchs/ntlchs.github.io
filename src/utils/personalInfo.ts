@@ -1,4 +1,4 @@
-const contactInfo = {
+export const contactInfo = {
   name: "Natália Chies",
   email: "nataliachies@gmail.com",
   phone: "55 (51) 99732-3814",
@@ -44,11 +44,11 @@ export type Experience = {
 
 export const experiences: { [key: string]: Experience } = {
   ViuMeuPet: {
-    type: ["work"],
+    type: ["work", "project"],
     title: "Viu meu pet",
     link: "https://www.viumeupet.com.br/",
     role: "Full-Stack Developer",
-    imageSrc: "", // Adicione a URL da imagem aqui
+    imageSrc: "/public/images/logo-horizontal-black.svg", // Adicione a URL da imagem aqui
     description:
       "Working as a Full-Stack Developer at Viu meu pet since May 2023.",
     activities: [
@@ -76,7 +76,7 @@ export const experiences: { [key: string]: Experience } = {
     link: "", // Adicione o link aqui, se houver
     role: "Web Developer",
     imageSrc: "", // Adicione a URL da imagem aqui
-    description: "Working as a Freelance Web Developer since Jan 2023.",
+    description: "Web Application Development for clients.",
     activities: [
       "Visual Identity, design mockups, logo and branding",
       "HTML, CSS, JavaScript, TypeScript, React, Next.js, TailwindCSS to create components and reusable UI using page routing",
@@ -103,5 +103,26 @@ export const experiences: { [key: string]: Experience } = {
     activities: [],
     technologies: [],
     started: "March 2023",
+  },
+  Moinho: {
+    type: ["project"],
+    title: "Moinho Consultoria",
+    link: "https://www.moinhoconsultoria.com.br/",
+    role: "Front-End Developer",
+    imageSrc: "/public/images/logo-horizontal-black.svg", // Adicione a URL da imagem aqui
+    description:
+      "Working as a Front-End Developer at Moinho Consultoria since March 2023.",
+    activities: [
+      "Website development with React and Next.js",
+      "SEO and performance optimization (web vitals)",
+      "Version control using git and pull requests on GitHub",
+    ],
+    technologies: [
+      techSkills.React,
+      techSkills.TypeScript,
+      techSkills.Git,
+      techSkills.Vercel,
+    ],
+    started: "October 2023",
   },
 };

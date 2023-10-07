@@ -1,25 +1,12 @@
 ---
 import PageTitle from "@components/PageTitle";
+import ProjectsContainer from "@components/ProjectsContainer";
 import PageLayout from "@layouts/PageLayout.astro";
 ---
 
 <PageLayout title="Natalia">
-  <main class="items-center flex flex-col w-full">
+  <div class="items-center flex flex-col w-full">
     <PageTitle>Projects</PageTitle>
-    <p>Coming soon</p>
-    <!-- <div class="grid w-full tablet:grid-cols-2 gap-2xl">
-      <ProjectCard
-        imageSrc="/assets/images/viumeupet.png"
-        title="ViuMeuPet"
-        description="Website for..."
-        link="https://viumeupet.com.br"
-      />
-      <ProjectCard
-        imageSrc="/assets/images/silviasdesign.png"
-        title="Silvia's Design"
-        description="Website for..."
-        link="https://silviasdesign.com"
-      />
-    </div> -->
-  </main>
+    <ProjectsContainer />
+  </div>
 </PageLayout>

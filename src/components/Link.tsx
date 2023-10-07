@@ -23,18 +23,20 @@ interface LinkProps
   icon?: React.ReactNode; // Add icon as an optional prop here
   children?: React.ReactNode;
   variant?: "primary" | "secondary";
+  blank?: boolean;
 }
 
-function Link({ children, icon, variant, ...props }: LinkProps) {
+function Link({ children, icon, variant, blank, ...props }: LinkProps) {
   return (
     <a
       {...props}
-      className={
+      target={blank ? "_blank" : "_self"}
+      className={twMerge(
         variant === "primary"
-          ? clickableClassNamePrimary
-          : variant === "secondary"
-            ? clickableClassNameSecondary
-            : clickableClassName
+        && clickableClassNamePrimary, variant === "secondary"
+      && clickableClassNameSecondary, clickableClassName
+
+      )
       }
     >
       <div className="w-full h-full flex gap-sm tablet:gap-md">

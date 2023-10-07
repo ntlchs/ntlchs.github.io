@@ -1,4 +1,3 @@
-import { PiCursorFill, PiEnvelopeFill, PiHouseFill, PiUserFill } from "react-icons/pi";
 import Link from "./Link";
 
 function Header() {
@@ -20,16 +19,20 @@ function Header() {
         <div className="block lg:hidden">
           <div className="MOBILE_LINKS w-full flex gap-sm text-primary-dark">
             <Link href="/">
-              <PiHouseFill size={30} />
+              <i className="text-[1.8rem] ph-fill ph-house"
+              ></i>
             </Link>
             <Link href="/about-me">
-              <PiUserFill size={30} />
+              <i className="text-[1.8rem] ph-fill ph-user"
+              ></i>
             </Link>
             <Link href="/projects">
-              <PiCursorFill size={30} />
+              <i className="text-[1.8rem] ph-fill ph-cursor"
+              ></i>
             </Link>
             <Link href="#contact">
-              <PiEnvelopeFill size={30} />
+              <i className="text-[1.8rem] ph-fill ph-envelope"
+              ></i>
             </Link>
           </div>
         </div>

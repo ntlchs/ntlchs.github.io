@@ -1,4 +1,3 @@
-import { PiArrowCircleRightFill } from "react-icons/pi";
 import {
   clickableClassName,
   clickableClassNamePrimary,
@@ -13,7 +12,8 @@ export const ProjectsLink = () => {
       href="/projects"
       className={twMerge("text-sm font-medium", clickableClassName, clickableClassNamePrimary)}
     >Check my projects
-      <PiArrowCircleRightFill className="inline-block ml-2" size={20} />
+      <i className="ph-fill ph-arrow-circle-right" />
+
     </a>
   )
 }

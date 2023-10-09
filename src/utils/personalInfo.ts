@@ -8,37 +8,27 @@ export const contactInfo = {
   website: "https://ntlchs.github.io/",
 };
 
-export type Skill = {
-  name: string;
-  level: number;
+export type TechSkill = {
+  title: string;
+  icon: string;
 };
 
 export type TechSkills = {
-  JavaScript: string;
-  TypeScript: string;
-  React: string;
-  Nodejs: string;
-  Sequelize: string;
-  PostgreSQL: string;
-  Git: string;
-  HTML: string;
-  CSS: string;
-  GoogleCloud: string;
-  Figma: string;
+  [key: string]: TechSkill;
 };
 
-const techSkills: TechSkills = {
-  JavaScript: "JavaScript",
-  TypeScript: "TypeScript",
-  React: "React",
-  Nodejs: "Node.js",
-  Sequelize: "Sequelize",
-  PostgreSQL: "PostgreSQL",
-  Git: "Git",
-  HTML: "HTML",
-  CSS: "CSS",
-  GoogleCloud: "Google Cloud",
-  Figma: "Figma",
+export const techSkills: TechSkills = {
+  JavaScript: { title: "JavaScript", icon: "javascript" },
+  TypeScript: { title: "TypeScript", icon: "typescript" },
+  React: { title: "React", icon: "react" },
+  Nodejs: { title: "Node.js", icon: "nodejs" },
+  Sequelize: { title: "Sequelize", icon: "sequelize" },
+  PostgreSQL: { title: "PostgreSQL", icon: "postgresql" },
+  Git: { title: "Git", icon: "git" },
+  HTML: { title: "HTML", icon: "html5" },
+  CSS: { title: "CSS", icon: "css3" },
+  GoogleCloud: { title: "Google Cloud", icon: "googlecloud" },
+  Figma: { title: "Figma", icon: "figma" },
 };
 
 export type experienceCategory = "work" | "project" | "study";
@@ -51,7 +41,7 @@ export type Experience = {
   imageSrc: string;
   description: string;
   activities: string[];
-  technologies: string[];
+  technologies: TechSkill[];
   started: string;
 };
 

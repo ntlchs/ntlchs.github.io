@@ -1,18 +1,16 @@
-import { experiences } from 'src/utils/personalInfo';
-import ProjectCard from './ProjectCard';
+import { experiences } from "src/utils/personalInfo";
+import ProjectCard from "./ProjectCard";
 
 const ProjectsContainer = () => {
-    return (
-        <div className="flex flex-col w-full">
-            {
-                Object.keys(experiences)
-                    .filter(key => experiences[key].type.includes("project"))
-                    .map(key => (
-                        <ProjectCard key={key} {...experiences[key]} />
-                    ))
-            }
-        </div>
-    );
+  return (
+    <div className="flex flex-col w-full">
+      {Object.keys(experiences)
+        .filter((key) => experiences[key].type.includes("project"))
+        .map((key) => (
+          <ProjectCard key={experiences[key].title} {...experiences[key]} />
+        ))}
+    </div>
+  );
 };
 
 export default ProjectsContainer;

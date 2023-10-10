@@ -4,10 +4,15 @@ function Header() {
   return (
     <header className="text-black w-full bg-hot-pink-200">
       <div className="flex items-center mx-auto p-md tablet:max-w-7xl px-lg justify-between">
-        <a href="/" className="flex items-center px-[10px] py-[6px]">
+        <a
+          href="/"
+          className="flex items-center px-[10px] py-[6px] justify-center"
+        >
           {/* px and py are the same as PiHouseFill */}
           {/* <img alt="Logo" src="/images/logo.svg" width={30} /> */}
-          <i className="ph-fill ph-heart animate-color-change"></i>
+          <p className="animate-color-change text-lg text-black font-merri">
+            nc
+          </p>
         </a>
         <div className="lg:block hidden">
           <div className="DESKTOP_LINKS flex gap-md">

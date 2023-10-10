@@ -13,7 +13,7 @@
   ></path>
 
   <circle r="12" fill="#000">
-    <animateMotion repeatCount="indefinite" dur="5s">
+    <animateMotion repeatCount="indefinite" dur="10s">
       <mpath href="#path1"></mpath>
     </animateMotion>
   </circle>
@@ -28,7 +28,7 @@
   ></path>
 
   <circle r="12" fill="#000">
-    <animateMotion repeatCount="indefinite" dur="5s" decelerate="2">
+    <animateMotion repeatCount="indefinite" dur="10s">
       <mpath href="#path2"></mpath>
     </animateMotion>
   </circle>
@@ -43,7 +43,7 @@
   ></path>
 
   <circle r="12" fill="#000">
-    <animateMotion repeatCount="indefinite" dur="5s">
+    <animateMotion repeatCount="indefinite" dur="10s">
       <mpath href="#path3"></mpath>
     </animateMotion>
   </circle>
@@ -58,7 +58,7 @@
   ></path>
 
   <circle r="12" fill="#000">
-    <animateMotion repeatCount="indefinite" dur="5s">
+    <animateMotion repeatCount="indefinite" dur="10s">
       <mpath href="#path4"></mpath>
     </animateMotion>
   </circle>

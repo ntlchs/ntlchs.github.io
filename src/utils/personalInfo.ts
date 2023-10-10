@@ -51,7 +51,7 @@ export const experiences: { [key: string]: Experience } = {
     title: "Viu meu pet",
     link: "https://www.viumeupet.com.br/",
     role: "Full-Stack Developer",
-    imageSrc: "/public/images/logo-horizontal-black.svg", // Adicione a URL da imagem aqui
+    imageSrc: "/images/logo-horizontal-black.svg", // Adicione a URL da imagem aqui
     description:
       "Working as a Full-Stack Developer at Viu meu pet since May 2023.",
     activities: [
@@ -113,7 +113,7 @@ export const experiences: { [key: string]: Experience } = {
     title: "Moinho Consultoria",
     link: "https://www.moinhoconsultoria.com.br/",
     role: "Front-End Developer",
-    imageSrc: "/public/images/preview-moinho.png", // Adicione a URL da imagem aqui
+    imageSrc: "/images/preview-moinho.png", // Adicione a URL da imagem aqui
     description:
       "Working as a Front-End Developer at Moinho Consultoria since March 2023.",
     activities: [

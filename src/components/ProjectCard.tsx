@@ -28,7 +28,7 @@ const ProjectCard = ({
         className="relative flex items-center justify-center h-auto w-64 aspect-video"
       >
         <div className="relative aspect-[1680:1024] max-w-[400px] my-md h-auto overflow-hidden">
-          <img src="/public/images/laptop-frame.png" alt="Frame" />
+          <img src="/images/laptop-frame.png" alt="Frame" />
 
           <img
             src={imageSrc}

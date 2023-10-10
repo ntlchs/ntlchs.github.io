@@ -56,8 +56,14 @@ const ProjectCard = ({
           </ul>
         </div>
         <div className="flex">
-          <Link href={link} variant="secondary" blank rel="noopener noreferrer">
-            Check it out
+          <Link
+            href={link}
+            variant="secondary"
+            blank
+            rel="noopener noreferrer"
+            icon={<i className="ph-fill ph-arrow-right" />}
+          >
+            Visit Website
           </Link>
         </div>
       </div>

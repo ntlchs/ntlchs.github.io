@@ -1,4 +1,3 @@
-
 function SocialIcon({
   title,
   url,
@@ -20,13 +19,12 @@ function SocialIcon({
 
 function Footer() {
   return (
-    <footer className="contact w-full bg-gray brightness-150 p-md">
+    <footer className="contact w-full p-md">
       <div className="w-2/3 py-md tablet:py-xl tablet:max-w-[30dvw] justify-between mx-auto flex items-center flex-col">
         <div className="flex gap-lg tablet:gap-2xl">
           <SocialIcon title="Github" iconClass="ph-github-logo" url="/" />
           <SocialIcon title="Linkedin" iconClass="ph-linkedin-logo" url="/" />
           <SocialIcon title="Email" iconClass="ph-envelope" url="/" />
-
         </div>
         <p className="text-xs pt-xl">by Natália Chies</p>
       </div>

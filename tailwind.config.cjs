@@ -29,13 +29,13 @@ module.exports = {
       desktop: "1350px",
       // => @media (min-width: 1280px) { ... }
     },
-    colors: {
-      black: "#1f1f1f",
-      gray: "#808084",
-      white: "#fefefe",
-      primary: "#8870ff",
-    },
     extend: {
+      colors: {
+        black: "#1f1f1f",
+        gray: "#808084",
+        white: "#fefefe",
+        primary: "#8870ff",
+      },
       fontFamily: {
         merri: ["Merriweather", "serif"],
       },
@@ -57,6 +57,34 @@ module.exports = {
         lg: "2.625rem", // 42px (26px * 1.618 ≈ 42)
         xl: "4.25rem", // 68px (42px * 1.618 ≈ 68)
         "2xl": "6.875rem", // 110px (68px * 1.618 ≈ 110)
+      },
+    },
+    animation: {
+      "color-change": "color-change 10s linear infinite",
+      "bg-color-change": "bg-color-change 10s linear infinite",
+      "border-color-change": "border-color-change 10s linear infinite",
+    },
+    keyframes: {
+      "color-change": {
+        "0%": { color: "#ffb6c1" } /* Light Pink */,
+        "25%": { color: "#add8e6" } /* Light Blue */,
+        "50%": { color: "#98fb98" } /* Pale Green */,
+        "75%": { color: "#ffdab9" } /* Peach Puff */,
+        "100%": { color: "#ffb6c1" } /* Light Pink */,
+      },
+      "border-color-change": {
+        "0%": { borderColor: "#ffb6c1" } /* Light Pink */,
+        "25%": { borderColor: "#add8e6" } /* Light Blue */,
+        "50%": { borderColor: "#98fb98" } /* Pale Green */,
+        "75%": { borderColor: "#ffdab9" } /* Peach Puff */,
+        "100%": { borderColor: "#ffb6c1" } /* Light Pink */,
+      },
+      "bg-color-change": {
+        "0%": { backgroundColor: "#ffb6c1" } /* Light Pink */,
+        "25%": { backgroundColor: "#add8e6" } /* Light Blue */,
+        "50%": { backgroundColor: "#98fb98" } /* Pale Green */,
+        "75%": { backgroundColor: "#ffdab9" } /* Peach Puff */,
+        "100%": { backgroundColor: "#ffb6c1" } /* Light Pink */,
       },
     },
   },

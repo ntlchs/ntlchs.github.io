@@ -5,18 +5,20 @@ import {
 } from "src/utils/Clickable";
 import { twMerge } from "tailwind-merge";
 
-
 export const ProjectsLink = () => {
   return (
     <a
       href="/projects"
-      className={twMerge("text-sm font-medium", clickableClassName, clickableClassNamePrimary)}
-    >Check my projects
+      className={twMerge(
+        "text-sm font-medium text-black animate-bg-color-change",
+        clickableClassName
+      )}
+    >
+      Check my projects
       <i className="ph-fill ph-arrow-circle-right" />
-
     </a>
-  )
-}
+  );
+};
 
 interface LinkProps
   extends Omit<React.LinkHTMLAttributes<HTMLElement>, "icon"> {
@@ -32,14 +34,12 @@ function Link({ children, icon, variant, blank, ...props }: LinkProps) {
       {...props}
       target={blank ? "_blank" : "_self"}
       className={twMerge(
-        variant === "primary"
-        && clickableClassNamePrimary, variant === "secondary"
-      && clickableClassNameSecondary, clickableClassName
-
-      )
-      }
+        variant === "primary" && clickableClassNamePrimary,
+        variant === "secondary" && clickableClassNameSecondary,
+        clickableClassName
+      )}
     >
-      <div className="w-full h-full flex gap-sm tablet:gap-md">
+      <div className="w-full h-full flex gap-sm tablet:gap-md items-center">
         {icon && icon}
         <p>{children}</p>
       </div>

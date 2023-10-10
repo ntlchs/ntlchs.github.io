@@ -57,6 +57,7 @@ export const experiences: { [key: string]: Experience } = {
     activities: [
       "Platform for locating lost pets via Meta (Facebook and Instagram) API",
       "Lead the design: Figma Mockups and Tokens, migration from CSS to TailwindCSS",
+
       "Data definition and queries to PostgreSQL using Sequelize CLI, database migrations with prisma",
       "Reusable React components, optimized render cycles, custom hooks for state management, routing via Next.js",
       "Handled TypeScript and JavaScript code quality by managing lint errors and actively resolving bugs",
@@ -76,9 +77,9 @@ export const experiences: { [key: string]: Experience } = {
   FreelanceWebDeveloper: {
     type: ["work"],
     title: "Freelance Web Developer",
-    link: "", // Adicione o link aqui, se houver
+    link: "",
     role: "Web Developer",
-    imageSrc: "", // Adicione a URL da imagem aqui
+    imageSrc: "",
     description: "Web Application Development for clients.",
     activities: [
       "Visual Identity, design mockups, logo and branding",

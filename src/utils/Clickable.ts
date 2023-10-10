@@ -10,5 +10,5 @@ export const clickableClassNamePrimary = twMerge(
 
 export const clickableClassNameSecondary = twMerge(
   clickableClassName,
-  "border border-black text-black bg-white"
+  "border-2 animate-border-color-change text-black bg-white"
 );

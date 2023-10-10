@@ -17,7 +17,7 @@ function Hero() {
           </div>
         </div>
 
-        <Title className="stroke-text text-[55px] leading-[65px] tablet:text-[90px] tablet:leading-[110px]">
+        <Title className="stroke-text text-[55px] leading-[65px] tablet:text-[80px] tablet:leading-[90px]">
           <p>
             I <span className="custom-animation-decoration">design</span>
           </p>
@@ -33,6 +33,7 @@ function Hero() {
           <ProjectsLink />
         </div>
       </div>
+      <img src="/src/components/science.svg" alt="science" />
     </div>
   );
 }

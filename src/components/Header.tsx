@@ -2,7 +2,7 @@ import Link from "./Link";
 
 function Header() {
   return (
-    <header className="text-black w-full bg-hot-pink-200">
+    <header className="text-black w-full bg-hot-pink-200 sticky z-10 top-0 backdrop-blur-lg">
       <div className="flex items-center mx-auto p-md tablet:max-w-7xl px-lg justify-between">
         <a
           href="/"

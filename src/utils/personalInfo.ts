@@ -57,7 +57,7 @@ export const experiences: { [key: string]: Experience } = {
     activities: [
       "Platform for locating lost pets via Meta (Facebook and Instagram) API",
       "Lead the design: Figma Mockups and Tokens, migration from CSS to TailwindCSS",
-      "Data definition and queries with PostgreSQL, database migrations with prisma",
+      "Data definition and queries to PostgreSQL using Sequelize CLI, database migrations with prisma",
       "Reusable React components, optimized render cycles, custom hooks for state management, routing via Next.js",
       "Handled TypeScript and JavaScript code quality by managing lint errors and actively resolving bugs",
       "Deployment on Vercel, CI/CD with GitHub Actions",
@@ -112,7 +112,7 @@ export const experiences: { [key: string]: Experience } = {
     title: "Moinho Consultoria",
     link: "https://www.moinhoconsultoria.com.br/",
     role: "Front-End Developer",
-    imageSrc: "/public/images/logo-horizontal-black.svg", // Adicione a URL da imagem aqui
+    imageSrc: "/public/images/preview-moinho.png", // Adicione a URL da imagem aqui
     description:
       "Working as a Front-End Developer at Moinho Consultoria since March 2023.",
     activities: [

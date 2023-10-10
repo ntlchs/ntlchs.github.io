@@ -27,11 +27,15 @@ const ProjectCard = ({
         rel="noopener noreferrer"
         className="relative flex items-center justify-center h-auto w-64 aspect-video"
       >
-        <img
-          src={imageSrc}
-          alt={title}
-          className="object-cover rounded-lg w-full"
-        />
+        <div className="relative aspect-[1680:1024] max-w-[400px] my-md h-auto overflow-hidden">
+          <img src="/public/images/laptop-frame.png" alt="Frame" />
+
+          <img
+            src={imageSrc}
+            alt="Picture"
+            className="absolute top-0 -z-10 w-full h-auto max-w-[90%] right-1/2 transform translate-x-1/2"
+          />
+        </div>
       </a>
       <div className="flex flex-col gap-lg justify-between ml-0 tablet:ml-4 w-full tablet:w-2/3">
         <div className="flex flex-col gap-lg">

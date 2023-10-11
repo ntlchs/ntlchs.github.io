@@ -33,7 +33,7 @@ function Hero() {
             </svg>
           </div>
         </div>
-        <img src="/src/components/science.svg" alt="science" />
+        <img src="src/components/science.svg" alt="science" />
       </div>
     </div>
   );

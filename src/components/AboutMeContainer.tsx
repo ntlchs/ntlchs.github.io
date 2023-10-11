@@ -1,5 +1,5 @@
 import { Experience, contactInfo, experiences } from "src/utils/personalInfo";
-import { ProjectsLink } from "./Link";
+import { DownloadCV, ProjectsLink } from "./Link";
 
 const AboutMeItem = ({
   title,
@@ -34,7 +34,9 @@ const AboutMeContainer = () => {
         <p className="font-semibold">{contactInfo.name}</p>
         <p>{contactInfo.location}</p>
       </div>
-
+      <div className="flex my-lg">
+        <DownloadCV />
+      </div>
       <ul className="list-disc px-12 space-y-3 my-6">
         {Object.keys(experiences)
           .filter(

@@ -20,6 +20,15 @@ export const ProjectsLink = () => {
   );
 };
 
+export const DownloadCV = () => {
+  return (
+    <Link variant="secondary" href="/files/CV.pdf">
+      <i className="ph-fill ph-read-cv-logo text-[24px]"></i>
+      <p>Download CV</p>
+    </Link>
+  );
+};
+
 interface LinkProps
   extends Omit<React.LinkHTMLAttributes<HTMLElement>, "icon"> {
   icon?: React.ReactNode; // Add icon as an optional prop here

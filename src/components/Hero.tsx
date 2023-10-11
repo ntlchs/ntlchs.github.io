@@ -67,9 +67,10 @@ const Science = () => {
           </animateMotion>
         </circle>
       </svg>
-      <p className="text-xs text-right">
-        *The svg was made by me. <br />
-        Feel free to use it, but please give me credit!
+      <p className="text-xs text-right text-gray">
+        SVG made by me. <br />
+        Feel free to use it, but please credit!
+        <i className="ph-fill ph-heart self-center px-xs animate-color-change" />
       </p>
     </div>
   );
@@ -78,6 +79,20 @@ const Science = () => {
 function Hero() {
   return (
     <div className="w-full grid tablet:grid-cols-2 gap-md tablet:gap-2xl rounded-lg p-lg tablet:p-2xl tablet:max-w-6xl text-black">
+      <div className="relative block tablet:hidden m-2xl animate-border-color-change rounded-lg">
+        <svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          className="blur-md absolute -z-10 scale-x-125"
+        >
+          <path
+            id="blob-path"
+            d="M59.1,-17.4C67.6,7.1,59.4,38.8,39.7,52.7C19.9,66.6,-11.4,62.7,-31.8,47.1C-52.1,31.6,-61.5,4.3,-54.4,-18.2C-47.3,-40.7,-23.6,-58.4,0.8,-58.7C25.3,-58.9,50.6,-41.8,59.1,-17.4Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+        <Science />
+      </div>
       <div className="flex flex-col gap-md tablet:gap-xl">
         <Title className="stroke-text text-[55px] leading-[65px] tablet:text-[80px] tablet:leading-[90px]">
           <p>
@@ -107,8 +122,9 @@ function Hero() {
             </svg>
           </div>
         </div>
-        {/* <img src="src/components/science.svg" alt="science" /> */}
-        <Science />
+        <div className="hidden tablet:block">
+          <Science />
+        </div>
       </div>
     </div>
   );

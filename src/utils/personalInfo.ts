@@ -38,7 +38,7 @@ export type Experience = {
   title: string;
   link: string;
   role: string;
-  imageSrc: string;
+  images: { mobile: string; desktop: string };
   description: string;
   activities: string[];
   technologies: TechSkill[];
@@ -51,7 +51,10 @@ export const experiences: { [key: string]: Experience } = {
     title: "Viu meu pet",
     link: "https://www.viumeupet.com.br/",
     role: "Full-Stack Developer",
-    imageSrc: "/images/logo-horizontal-black.svg", // Adicione a URL da imagem aqui
+    images: {
+      mobile: "/images/viumeupet-mobile.png",
+      desktop: "/images/viumeupet-desktop.png",
+    },
     description:
       "Working as a Full-Stack Developer at Viu meu pet since May 2023.",
     activities: [
@@ -79,7 +82,10 @@ export const experiences: { [key: string]: Experience } = {
     title: "Freelance Web Developer",
     link: "",
     role: "Web Developer",
-    imageSrc: "",
+    images: {
+      mobile: "/images/preview-ntlchs.png",
+      desktop: "/images/preview-ntlchs.png",
+    },
     description: "Web Application Development for clients.",
     activities: [
       "Visual Identity, design mockups, logo and branding",
@@ -101,7 +107,10 @@ export const experiences: { [key: string]: Experience } = {
     title: "Unisinos University",
     link: "https://www.unisinos.br/",
     role: "Computer Science Student",
-    imageSrc: "", // Adicione a URL da imagem aqui
+    images: {
+      mobile: "/images/logo-unisinos.png",
+      desktop: "/images/logo-unisinos.png",
+    }, // Adicione a URL da imagem aqui
     description:
       "Studying Computer Science at Unisinos University since March 2023.",
     activities: [],
@@ -113,7 +122,10 @@ export const experiences: { [key: string]: Experience } = {
     title: "Moinho Consultoria",
     link: "https://www.moinhoconsultoria.com.br/",
     role: "Front-End Developer",
-    imageSrc: "/images/preview-moinho.png", // Adicione a URL da imagem aqui
+    images: {
+      mobile: "/images/logo-moinho.png",
+      desktop: "/images/moinho-desktop.png",
+    },
     description:
       "Working as a Front-End Developer at Moinho Consultoria since March 2023.",
     activities: [

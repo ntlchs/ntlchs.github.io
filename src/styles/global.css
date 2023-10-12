@@ -187,3 +187,7 @@ h1 {
     transform: scale(0.75) translate(97%, -20%);
   }
 }
+
+.title {
+  text-wrap: balance;
+}

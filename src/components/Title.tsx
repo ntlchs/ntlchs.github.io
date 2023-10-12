@@ -8,7 +8,7 @@ function Title({
   className?: string;
 }) {
   const titleClassName = twMerge(
-    "font-bold text-2xl text-extrabold",
+    "font-bold text-2xl text-extrabold title",
     className ?? ""
   );
   return <h1 className={titleClassName}>{children}</h1>;

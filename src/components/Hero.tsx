@@ -79,7 +79,7 @@ const Science = () => {
 
 function Hero() {
   return (
-    <div className="w-full grid tablet:grid-cols-2 gap-md tablet:gap-2xl rounded-lg p-lg tablet:p-2xl tablet:max-w-6xl text-black">
+    <div className="w-full grid tablet:grid-cols-2 gap-md tablet:gap-2xl rounded-lg p-6 tablet:p-2xl tablet:max-w-6xl text-black">
       <div className="relative block tablet:hidden m-2xl animate-border-color-change rounded-lg">
         <svg
           viewBox="0 0 200 200"

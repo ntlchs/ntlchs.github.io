@@ -1,6 +1,6 @@
 import { contactInfo } from "./myInfo";
 
 export const hero = {
-  title: "Boost Your Business Web Presence",
+  title: "I design and build for the web",
   subtitle: `I'm ${contactInfo.name}, a Full-Stack Developer`,
 };

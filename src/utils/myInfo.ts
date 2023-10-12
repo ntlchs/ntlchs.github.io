@@ -122,7 +122,7 @@ export const experiences: { [key: string]: Experience } = {
     link: "https://www.moinhoconsultoria.com.br/",
     role: "Front-End Developer",
     images: {
-      mobile: "/images/logo-moinho.png",
+      mobile: "/images/moinho-mobile.png",
       desktop: "/images/moinho-desktop.png",
     },
     description:

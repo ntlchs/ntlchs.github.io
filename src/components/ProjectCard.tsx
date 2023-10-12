@@ -37,7 +37,7 @@ const ProjectCard = ({
             <img
               src={images.desktop}
               alt="Picture"
-              className="absolute top-0 -z-10 w-full h-auto max-w-[90%] right-1/2 transform translate-x-1/2"
+              className="absolute top-0 -z-10 w-full m-sm mx-auto h-auto max-w-[90%] right-1/2 transform translate-x-1/2"
             />
           </div>
           <div className="relative aspect-[1800:600] max-w-[400px] my-md h-auto overflow-hidden block laptop:hidden">

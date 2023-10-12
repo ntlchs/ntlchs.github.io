@@ -29,7 +29,7 @@ const Science = () => {
         ></path>
 
         <circle r="12" fill="#000">
-          <animateMotion repeatCount="indefinite" dur="10s">
+          <animateMotion repeatCount="indefinite" dur="9s">
             <mpath href="#path2"></mpath>
           </animateMotion>
         </circle>
@@ -46,7 +46,7 @@ const Science = () => {
         <circle r="12" fill="#000">
           <animateMotion
             repeatCount="indefinite"
-            dur="10s"
+            dur="11s"
             begin="0s; delay1.begin+2s"
           >
             <mpath href="#path3"></mpath>
@@ -79,8 +79,8 @@ const Science = () => {
 
 function Hero() {
   return (
-    <div className="w-full grid tablet:grid-cols-2 gap-md tablet:gap-2xl rounded-lg p-6 tablet:p-2xl tablet:max-w-6xl text-black">
-      <div className="relative block tablet:hidden m-2xl animate-border-color-change rounded-lg">
+    <div className="w-full grid laptop:grid-cols-2 gap-md laptop:gap-2xl rounded-lg p-6 tablet:p-2xl laptop:max-w-6xl text-black">
+      <div className="relative block laptop:hidden m-2xl animate-border-color-change rounded-lg">
         <svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
@@ -104,18 +104,18 @@ function Hero() {
         </div>
       </div>
       <div>
-        <div className="blob-container">
-          <div className="blob">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-              <path
-                id="blob-path"
-                d="M59.1,-17.4C67.6,7.1,59.4,38.8,39.7,52.7C19.9,66.6,-11.4,62.7,-31.8,47.1C-52.1,31.6,-61.5,4.3,-54.4,-18.2C-47.3,-40.7,-23.6,-58.4,0.8,-58.7C25.3,-58.9,50.6,-41.8,59.1,-17.4Z"
-                transform="translate(100 100)"
-              />
-            </svg>
+        <div className="hidden laptop:block">
+          <div className="blob-container">
+            <div className="blob">
+              <svg viewBox="10 10 180 180" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  id="blob-path"
+                  d="M59.1,-17.4C67.6,7.1,59.4,38.8,39.7,52.7C19.9,66.6,-11.4,62.7,-31.8,47.1C-52.1,31.6,-61.5,4.3,-54.4,-18.2C-47.3,-40.7,-23.6,-58.4,0.8,-58.7C25.3,-58.9,50.6,-41.8,59.1,-17.4Z"
+                  transform="translate(100 100)"
+                />
+              </svg>
+            </div>
           </div>
-        </div>
-        <div className="hidden tablet:block">
           <Science />
         </div>
       </div>

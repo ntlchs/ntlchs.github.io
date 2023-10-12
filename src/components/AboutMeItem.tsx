@@ -1,28 +1,31 @@
 import type { Experience } from "src/utils/personalInfo";
+import { twMerge } from "tailwind-merge";
 
-interface Props {
-    // Define props here
-}
-
-const AboutMeItem = ({
-    title,
-    role,
-    link,
-    started,
-    activities
+export const AboutMeItem = ({
+  title,
+  role,
+  link,
+  description,
+  started,
+  activities,
 }: Experience) => {
-
-    return (
-        <li>
-            {role} at <a href={link} target="_blank" className="font-medium">{title}</a>
-            <span className="text-gray"> since {started}</span>
-            <ul className="ml-4 list-disc marker:text-primary">
-                {activities.map((activity, index) => (
-                    <li key={index}>{activity}</li>
-                ))}
-            </ul>
-        </li>
-    );
+  return (
+    <li>
+      {role} at{" "}
+      <a
+        href={link}
+        target="_blank"
+        className={twMerge("font-medium", link === "" && "cursor-default")}
+      >
+        {title}
+      </a>
+      <span className="text-gray"> since {started}</span>
+      <p>{description}</p>
+      <ul className="ml-4 list-disc marker:animate-color-change">
+        {activities.map((activity, index) => (
+          <li key={index}>{activity}</li>
+        ))}
+      </ul>
+    </li>
+  );
 };
-
-export default AboutMeItem;

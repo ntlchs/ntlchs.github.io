@@ -1,3 +1,5 @@
+import { unisinosDescription } from "./utils";
+
 export const contactInfo = {
   name: "Natália Chies",
   email: "nataliachies@gmail.com",
@@ -56,11 +58,9 @@ export const experiences: { [key: string]: Experience } = {
       desktop: "/images/viumeupet-desktop.png",
     },
     description:
-      "Working as a Full-Stack Developer at Viu meu pet since May 2023.",
+      "Web app for locating lost pets via Meta (Facebook/Instagram) API",
     activities: [
-      "Platform for locating lost pets via Meta (Facebook and Instagram) API",
       "Lead the design: Figma Mockups and Tokens, migration from CSS to TailwindCSS",
-
       "Data definition and queries to PostgreSQL using Sequelize CLI, database migrations with prisma",
       "Reusable React components, optimized render cycles, custom hooks for state management, routing via Next.js",
       "Handled TypeScript and JavaScript code quality by managing lint errors and actively resolving bugs",
@@ -79,14 +79,14 @@ export const experiences: { [key: string]: Experience } = {
   },
   FreelanceWebDeveloper: {
     type: ["work"],
-    title: "Freelance Web Developer",
+    title: "Freelance",
     link: "",
-    role: "Web Developer",
+    role: "FullStack Developer",
     images: {
       mobile: "/images/preview-ntlchs.png",
       desktop: "/images/preview-ntlchs.png",
     },
-    description: "Web Application Development for clients.",
+    description: "Web App and Website development for clients",
     activities: [
       "Visual Identity, design mockups, logo and branding",
       "HTML, CSS, JavaScript, TypeScript, React, Next.js, TailwindCSS to create components and reusable UI using page routing",
@@ -110,9 +110,8 @@ export const experiences: { [key: string]: Experience } = {
     images: {
       mobile: "/images/logo-unisinos.png",
       desktop: "/images/logo-unisinos.png",
-    }, // Adicione a URL da imagem aqui
-    description:
-      "Studying Computer Science at Unisinos University since March 2023.",
+    },
+    description: unisinosDescription(),
     activities: [],
     technologies: [],
     started: "March 2023",
@@ -127,7 +126,7 @@ export const experiences: { [key: string]: Experience } = {
       desktop: "/images/moinho-desktop.png",
     },
     description:
-      "Working as a Front-End Developer at Moinho Consultoria since March 2023.",
+      "Portfolio Website for Moinho Consultoria, a Civil Engineering company",
     activities: [
       "Website development with React and Next.js",
       "SEO and performance optimization (web vitals)",

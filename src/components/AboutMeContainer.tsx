@@ -1,28 +1,6 @@
-import { Experience, contactInfo, experiences } from "src/utils/personalInfo";
+import { contactInfo, experiences } from "src/utils/personalInfo";
+import { AboutMeItem } from "./AboutMeItem";
 import { DownloadCV, ProjectsLink } from "./Link";
-
-const AboutMeItem = ({
-  title,
-  role,
-  link,
-  started,
-  activities,
-}: Experience) => {
-  return (
-    <li>
-      {role} at{" "}
-      <a href={link} target="_blank" className="font-medium">
-        {title}
-      </a>
-      <span className="text-gray"> since {started}</span>
-      <ul className="ml-4 list-disc marker:animate-color-change">
-        {activities.map((activity, index) => (
-          <li key={index}>{activity}</li>
-        ))}
-      </ul>
-    </li>
-  );
-};
 
 const AboutMeContainer = () => {
   return (

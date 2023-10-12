@@ -4,7 +4,7 @@ import Title from "./Title";
 
 const Science = () => {
   return (
-    <div className="max-w-md">
+    <>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="-15 -15 550 550">
         <path
           id="path1"
@@ -73,7 +73,7 @@ const Science = () => {
         Feel free to use it, but please credit!
         <i className="ph-fill ph-heart self-center px-xs animate-color-change" />
       </p>
-    </div>
+    </>
   );
 };
 

@@ -1,4 +1,6 @@
+import { contactInfo } from "./myInfo";
+
 export const hero = {
   title: "Boost Your Business Web Presence",
-  subtitle: "I'm Natália Chies, a Full-Stack Developer",
+  subtitle: `I'm ${contactInfo.name}, a Full-Stack Developer`,
 };

@@ -1,4 +1,4 @@
-import type { Experience } from "src/utils/personalInfo";
+import type { Experience } from "src/utils/myInfo";
 import { twMerge } from "tailwind-merge";
 
 export const AboutMeItem = ({

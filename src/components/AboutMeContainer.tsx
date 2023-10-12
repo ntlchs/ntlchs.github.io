@@ -1,4 +1,4 @@
-import { contactInfo, experiences } from "src/utils/personalInfo";
+import { contactInfo, experiences } from "src/utils/myInfo";
 import { AboutMeItem } from "./AboutMeItem";
 import { DownloadCV, ProjectsLink } from "./Link";
 

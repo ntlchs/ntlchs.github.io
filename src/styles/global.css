@@ -146,7 +146,7 @@ h1 {
 }
 
 .animate-colorChange {
-  animation: colorChange 2s linear infinite;
+  animation: colorChange 10s linear infinite;
 }
 
 @keyframes colorChange {

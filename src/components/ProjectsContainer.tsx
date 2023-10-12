@@ -1,4 +1,4 @@
-import { experiences } from "src/utils/personalInfo";
+import { experiences } from "src/utils/myInfo";
 import ProjectCard from "./ProjectCard";
 
 const ProjectsContainer = () => {

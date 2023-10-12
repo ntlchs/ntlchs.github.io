@@ -1,4 +1,4 @@
-import type { TechSkill } from "src/utils/personalInfo";
+import type { TechSkill } from "src/utils/myInfo";
 import DevIcon from "./DevIcon";
 import Link from "./Link";
 

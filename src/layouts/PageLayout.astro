@@ -1,4 +1,5 @@
 ---
+import { contactInfo } from "src/utils/myInfo";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Layout from "./Layout.astro";
@@ -6,7 +7,7 @@ import Layout from "./Layout.astro";
 const { title } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={`${contactInfo.name} - ${title}`}>
   <Header />
   <main class="w-full flex-grow flex-shrink h-full">
     <div

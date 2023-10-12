@@ -1,3 +1,4 @@
+import { hero } from "src/utils/websiteInfo";
 import { ProjectsLink } from "./Link";
 import Title from "./Title";
 
@@ -95,17 +96,9 @@ function Hero() {
       </div>
       <div className="flex flex-col gap-md tablet:gap-xl">
         <Title className="stroke-text text-[55px] leading-[65px] tablet:text-[80px] tablet:leading-[90px]">
-          <p>
-            I <span className="custom-animation-decoration">design</span>
-          </p>
-          <p>
-            and <span className="custom-animation-decoration">build</span>
-          </p>
-          <p>websites.</p>
+          {hero.title}
         </Title>
-        <h2 className="text-[20px] font-semibold">
-          I am Natália, a full-stack web developer
-        </h2>
+        <h2 className="text-[20px] font-semibold">{hero.subtitle}</h2>
         <div className="w-full flex gap-md tablet:gap-lg">
           <ProjectsLink />
         </div>

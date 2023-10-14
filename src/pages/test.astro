@@ -1,60 +1,99 @@
 ---
-import P5Layout from "@layouts/p5Layout.astro";
+import Layout from "@layouts/Layout.astro";
 ---
 
-<P5Layout>
-  <div id="sketch-container"></div>
-  <div class="frame">
-    <img src="frame.png" alt="Frame" class="frame-image" />
-    <img src="picture.jpg" alt="Picture" class="inner-image" />
+<Layout>
+  <div id="sketch-container">
+    <h1>Sketch</h1>
+    <p>
+      This is a sketch. It's a <a href="https://p5js.org/">p5.js</a> sketch.
+    </p>
+    <p>
+      <a href="" id="download-link" download="sketch.png"> Download</a>
+    </p>
   </div>
-  <script>
-    console.log("Script is running.");
-    // let bubbles = [];
 
-    // function setup() {
-    //   const canvas = createCanvas(windowWidth, windowHeight);
-    //   canvas.parent("sketch-container");
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="560"
+    height="560"
+    viewBox="-10 -10 550 550"
+  >
+    <!-- Caminho da elipse 1 (posição normal) -->
+    <path
+      id="path1"
+      d="M250 350 A250 100 0 1 0 250 150 A250 100 0 1 0 250 350"
+      fill="transparent"
+      stroke="#000"
+      stroke-width="5"></path>
 
-    //   // Create and initialize bubbles
-    //   for (let i = 0; i < 2; i++) {
-    //     bubbles.push(new Bubble(Math.random(width), Math.random(height)));
-    //   }
-    // }
+    <!-- Círculo animado 1 (posição normal) -->
+    <circle r="12" fill="#000">
+      <animateMotion repeatCount="indefinite" dur="7s">
+        <mpath href="#path1"></mpath>
+      </animateMotion>
+    </circle>
 
-    // function draw() {
-    //   background(255);
+    <!-- Caminho da elipse 2 (rotação de 90 graus) -->
+    <path
+      id="path2"
+      d="M250 0 A100 250 0 1 0 250 500 A100 250 0 1 0 250 0"
+      fill="transparent"
+      stroke="#000"
+      stroke-width="5"></path>
 
-    //   // Update and display bubbles
-    //   for (let bubble of bubbles) {
-    //     bubble.update();
-    //     bubble.display();
-    //   }
-    // }
+    <!-- Círculo animado 2 (rotação de 90 graus) -->
+    <circle r="12" fill="#000">
+      <animateMotion repeatCount="indefinite" dur="5s">
+        <mpath href="#path2"></mpath>
+      </animateMotion>
+    </circle>
 
-    // class Bubble {
-    //   constructor(x, y) {
-    //     this.x = x;
-    //     this.y = y;
-    //     this.radius = 25;
-    //   }
+    <path
+      id="path3"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="transparent"
+      d="M79.491 79.4912C89.0278 69.95441 102.9125 65.34691 120.2192 65.49059C137.5382 65.63436 158.0784 70.54467 180.547 79.8113C225.472 98.3399 277.631 134.088 326.271 182.729C374.912 231.37 410.66 283.528 429.189 328.453C438.455 350.922 443.366 371.462 443.509 388.781C443.653 406.088 439.046 419.972 429.509 429.509C419.972 439.046 406.087 443.653 388.781 443.51C371.462 443.366 350.921 438.456 328.453 429.189C283.528 410.66 231.369 374.912 182.729 326.271C134.088 277.631 98.3401 225.473 79.8113 180.547C70.5447 158.0786 65.6344 137.5383 65.4906 120.2194C65.3468 102.9127 69.9543 89.028 79.491 79.4912Z"
+      stroke="black"
+      stroke-width="5"></path>
 
-    //   update() {
-    //     // Move the bubble randomly
-    //     this.x += Math.random(-2, 2);
-    //     this.y += Math.random(-2, 2);
+    <circle r="12" fill="#000">
+      <animateMotion repeatCount="indefinite" dur="5s">
+        <mpath href="#path3"></mpath>
+      </animateMotion>
+    </circle>
 
-    //     // Constrain the bubble within the canvas
-    //     this.x = constrain(this.x, 0, width - this.radius);
-    //     this.y = constrain(this.y, 0, height - this.radius);
-    //   }
+    <path
+      id="path4"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="transparent"
+      d="M420.509 79.4912C410.972 69.95441 397.087 65.34691 379.78 65.49059C362.461 65.63436 341.921 70.54467 319.453 79.8113C274.528 98.3399 222.369 134.088 173.729 182.729C125.088 231.37 89.3401 283.528 70.8113 328.453C61.5455 350.922 56.6344 371.462 56.4906 388.781C56.3468 406.088 60.9543 419.972 70.491 429.509C80.0278 439.046 93.9125 443.653 111.22 443.51C128.541 443.366 149.081 438.456 171.549 429.189C216.474 410.66 268.631 374.912 317.271 326.271C365.912 277.631 401.66 225.473 420.189 180.547C429.456 158.0786 434.366 137.5383 434.51 120.2194C434.654 102.9127 430.046 89.028 420.509 79.4912Z"
+      stroke="black"
+      stroke-width="5"></path>
 
-    //   display() {
-    //     // Display the bubble
-    //     noStroke();
-    //     fill("#3498db");
-    //     ellipse(this.x, this.y, this.radius * 2);
-    //   }
-    // }
-  </script>
-</P5Layout>
+    <circle r="12" fill="#000">
+      <animateMotion repeatCount="indefinite" dur="5s">
+        <mpath href="#path4"></mpath>
+      </animateMotion>
+    </circle>
+  </svg>
+</Layout>
+
+<!-- <div id="gol" class="w-[500px] h-[500px]">GOL</div> -->
+<!-- <div id="bubble-container" class="w-[500px] h-[500px]"></div> -->
+<p class="animate-color-change">Texto com animação de cor</p>
+<script>
+  import "https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js";
+  console.log("Script is running.");
+  // import "/src/scripts/sketch.js";
+  import "/src/scripts/bubble.js";
+</script>
+
+<svg viewBox="0 0 500 500" width="500" height="500">
+  <path
+    id="path3"
+    xmlns="http://www.w3.org/2000/svg"
+    d="M16.991 16.9912C26.5278 7.45441 40.4125 2.84691 57.7192 2.99059C75.0382 3.13436 95.5784 8.04467 118.047 17.3113C162.972 35.8399 215.131 71.588 263.771 120.229C312.412 168.87 348.16 221.028 366.689 265.953C375.955 288.422 380.866 308.962 381.009 326.281C381.153 343.588 376.546 357.472 367.009 367.009C357.472 376.546 343.587 381.153 326.281 381.01C308.962 380.866 288.421 375.956 265.953 366.689C221.028 348.16 168.869 312.412 120.229 263.771C71.5878 215.131 35.8398 162.973 17.3111 118.047C8.04451 95.5786 3.1342 75.0383 2.99043 57.7194C2.84676 40.4127 7.45425 26.528 16.991 16.9912Z"
+    stroke="black"
+    stroke-width="5"></path>
+</svg>

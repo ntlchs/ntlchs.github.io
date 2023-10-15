@@ -15,3 +15,7 @@ add progress bar in blog post
 ## Notes
 
 -- position: ... searches for the closest parent with defined position?
+
+.tex CV:
+sudo apt install texlive-latex-base
+pdflatex src/utils/CV.tex

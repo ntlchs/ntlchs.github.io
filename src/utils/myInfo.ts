@@ -22,7 +22,7 @@ export type TechSkills = {
 export const techSkills: TechSkills = {
   JavaScript: { title: "JavaScript", icon: "javascript" },
   TypeScript: { title: "TypeScript", icon: "typescript" },
-  React: { title: "React", icon: "react" },
+  React: { title: "React.js", icon: "react" },
   Nodejs: { title: "Node.js", icon: "nodejs" },
   Sequelize: { title: "Sequelize", icon: "sequelize" },
   PostgreSQL: { title: "PostgreSQL", icon: "postgresql" },
@@ -62,7 +62,7 @@ export const experiences: { [key: string]: Experience } = {
     activities: [
       "Lead the design: Figma Mockups and Tokens, migration from CSS to TailwindCSS",
       "Data definition and queries to PostgreSQL using Sequelize CLI, database migrations with prisma",
-      "Reusable React components, optimized render cycles, custom hooks for state management, routing via Next.js",
+      "Reusable React.js components, optimized render cycles, custom hooks for state management, routing via Next.js",
       "Handled TypeScript and JavaScript code quality by managing lint errors and actively resolving bugs",
       "Deployment on Vercel, CI/CD with GitHub Actions",
       "SEO and performance optimization (web vitals)",
@@ -88,8 +88,8 @@ export const experiences: { [key: string]: Experience } = {
     },
     description: "Web App and Website development for clients",
     activities: [
-      "Visual Identity, design mockups, logo and branding",
-      "HTML, CSS, JavaScript, TypeScript, React, Next.js, TailwindCSS to create components and reusable UI using page routing",
+      "Visual Identity, design mockups, in-depth market research and benchmarking",
+      "HTML, CSS, JavaScript, TypeScript, React.js, Next.js, TailwindCSS to create components and reusable UI using page routing",
       "Web vitals, Google Analytics, SEO, performance optimization",
       "DNS configuration, domain registration, SSL certificate, deployment",
     ],
@@ -112,7 +112,12 @@ export const experiences: { [key: string]: Experience } = {
       desktop: "/images/logo-unisinos.png",
     },
     description: unisinosDescription(),
-    activities: [],
+    activities: [
+      "Data Structures",
+      "Algorithms",
+      "Object Oriented Programming",
+      "Software Engineering",
+    ],
     technologies: [],
     started: "March 2023",
   },
@@ -126,9 +131,9 @@ export const experiences: { [key: string]: Experience } = {
       desktop: "/images/moinho-desktop.png",
     },
     description:
-      "Portfolio Website for Moinho Consultoria, a Civil Engineering company",
+      "Portfolio Website for Moinho Consultoria, a Consultancy company",
     activities: [
-      "Website development with React and Next.js",
+      "Website development with React.js and Next.js",
       "SEO and performance optimization (web vitals)",
       "Version control using git and pull requests on GitHub",
     ],

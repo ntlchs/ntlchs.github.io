@@ -1,3 +1,5 @@
+import { contactInfo } from "src/utils/myInfo";
+
 function SocialIcon({
   title,
   url,
@@ -8,7 +10,11 @@ function SocialIcon({
   iconClass: string;
 }) {
   return (
-    <a href={url} className="flex flex-col gap-sm items-center justify-center">
+    <a
+      href={url}
+      className="flex flex-col gap-sm items-center justify-center"
+      target="_blank"
+    >
       <div className="justify-center items-center flex flex-col aspect-square">
         <i className={`ph-fill ${iconClass} text-lg`}></i>
       </div>
@@ -22,9 +28,21 @@ function Footer() {
     <footer className="contact w-full p-md">
       <div className="w-2/3 py-md tablet:py-xl tablet:max-w-[30dvw] justify-between mx-auto flex items-center flex-col">
         <div className="flex gap-lg tablet:gap-2xl">
-          <SocialIcon title="Github" iconClass="ph-github-logo" url="/" />
-          <SocialIcon title="Linkedin" iconClass="ph-linkedin-logo" url="/" />
-          <SocialIcon title="Email" iconClass="ph-envelope" url="/" />
+          <SocialIcon
+            title="Github"
+            iconClass="ph-github-logo"
+            url={contactInfo.github}
+          />
+          <SocialIcon
+            title="Linkedin"
+            iconClass="ph-linkedin-logo"
+            url={contactInfo.linkedin}
+          />
+          <SocialIcon
+            title="Email"
+            iconClass="ph-envelope"
+            url={`mailto:${contactInfo.email}`}
+          />
         </div>
         <p className="text-xs pt-xl">by Natália Chies</p>
       </div>

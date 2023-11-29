@@ -22,7 +22,7 @@ export const ProjectsLink = () => {
 
 export const DownloadCV = () => {
   return (
-    <Link variant="secondary" href="/files/CV.pdf">
+    <Link variant="secondary" href="/files/CV.pdf" blank>
       <i className="ph-fill ph-read-cv-logo text-[24px]"></i>
       <p>Download CV</p>
     </Link>

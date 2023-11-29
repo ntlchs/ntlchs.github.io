@@ -1,4 +1,5 @@
 ---
+import ContactForm from "@components/ContactForm";
 import { DownloadCV } from "@components/Link";
 import PageTitle from "@components/PageTitle";
 import PageLayout from "@layouts/PageLayout.astro";
@@ -6,5 +7,10 @@ import PageLayout from "@layouts/PageLayout.astro";
 
 <PageLayout title="Contact">
   <PageTitle>Contact</PageTitle>
+  <p class="max-w-xl">
+    If you have any questions or would like to get in touch, please feel free to
+    contact me using the form below.
+  </p>
+  <ContactForm/>
   <DownloadCV />
 </PageLayout>

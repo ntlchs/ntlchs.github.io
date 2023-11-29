@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import React, { useState } from "react";
 import Button from "./Button";
 
 interface ContactFormValues {
@@ -23,18 +23,20 @@ const ContactForm: React.FC = () => {
     setFormValues({ ...formValues, [name]: value });
   };
 
-  const handleSubmit = (event: FormEvent) => {
-    event.preventDefault();
-    console.log(formValues);
-    // Aqui você pode adicionar a lógica para enviar os dados para um servidor
-  };
+  // const handleSubmit = (event: FormEvent) => {
+  //   event.preventDefault();
+  //   console.log(formValues);
+  //   // Aqui você pode adicionar a lógica para enviar os dados para um servidor
+  // };
 
   return (
     <form
-      onSubmit={handleSubmit}
-      className="grid gap-2 bg-slate-100 p-4 rounded-lg tablet:w-2/3"
+      // onSubmit={handleSubmit}
+      action="https://formspree.io/f/mgejjpwl"
+      method="POST"
+      className="grid gap-2 bg-slate-100 p-4 rounded-lg w-full max-w-xl items-center"
     >
-      <div>
+      <div className="flex flex-col gap-1">
         <label className="font-bold flex flex-col" htmlFor="name">
           Name:
           <p className="text-xs font-light text-red-600">* Required</p>
@@ -49,7 +51,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
+      <div className="flex flex-col gap-1">
         <label className="font-bold flex flex-col" htmlFor="email">
           E-mail:
           <p className="text-xs font-light text-red-600">* Required</p>
@@ -64,7 +66,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
+      <div className="flex flex-col gap-1">
         <label className="font-bold flex flex-col" htmlFor="company">
           Company:
         </label>
@@ -77,7 +79,7 @@ const ContactForm: React.FC = () => {
           onChange={handleChange}
         />
       </div>
-      <div>
+      <div className="flex flex-col gap-1">
         <label className="font-bold flex flex-col" htmlFor="message">
           Message:
           <p className="text-xs font-light text-red-600">* Required</p>

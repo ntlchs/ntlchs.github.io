@@ -2,6 +2,20 @@
 
 ## how to deploy?
 
+run the following commands:
+
+```bash
+asdf install
+```
+
+```bash
+npx astro add
+```
+
+```bash
+npm install
+```
+
 This project deploys automatically on git push.
 
 ## TODO

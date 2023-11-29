@@ -31,3 +31,22 @@ export const unisinosDescription = () => {
 
   return desc;
 };
+
+export function copyToClipboard(id: string): void {
+  const element = document.getElementById(id);
+  const text = element?.innerText || "";
+
+  const el = document.createElement("textarea");
+  el.value = text.split(": ")[1]; // Remove a etiqueta "Email: " ou "Telefone: "
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand("copy");
+  document.body.removeChild(el);
+
+  // Mostrar toast
+  const toast = document.getElementById("toast");
+  if (toast) {
+    toast.classList.add("show-toast");
+    setTimeout(() => toast.classList.remove("show-toast"), 3000);
+  }
+}

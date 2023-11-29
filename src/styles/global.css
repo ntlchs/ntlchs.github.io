@@ -191,3 +191,21 @@ h1 {
 .title {
   text-wrap: balance;
 }
+
+.toast {
+  visibility: hidden;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.show-toast {
+  visibility: visible;
+}

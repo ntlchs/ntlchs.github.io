@@ -4,16 +4,18 @@ function SocialIcon({
   title,
   url,
   iconClass,
+  blank = true,
 }: {
   title: string;
   url: string;
   iconClass: string;
+  blank?: boolean;
 }) {
   return (
     <a
       href={url}
       className="flex flex-col gap-sm items-center justify-center hover:scale-105"
-      target="_blank"
+      target={blank ? "_blank" : "_self"}
     >
       <div className="justify-center items-center flex flex-col aspect-square">
         <i className={`ph-fill ${iconClass} text-lg`}></i>
@@ -38,7 +40,12 @@ function Footer() {
             iconClass="ph-linkedin-logo"
             url={contactInfo.linkedin}
           />
-          <SocialIcon title="Email" iconClass="ph-envelope" url="/contact" />
+          <SocialIcon
+            title="Email"
+            iconClass="ph-envelope"
+            url="/contact"
+            blank={false}
+          />
         </div>
         <div className="text-xs pt-xl flex gap-xs">
           by

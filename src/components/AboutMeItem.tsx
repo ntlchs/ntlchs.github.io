@@ -19,7 +19,7 @@ export const AboutMeItem = ({
       >
         {title}
       </a>
-      <span className="text-gray"> since {started}</span>
+      <span className="text-gray"> - since {started}</span>
       <p>{description}</p>
       <ul className="ml-4 list-disc marker:animate-color-change">
         {activities.map((activity, index) => (

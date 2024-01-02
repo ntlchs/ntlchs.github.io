@@ -12,7 +12,7 @@ function SocialIcon({
   return (
     <a
       href={url}
-      className="flex flex-col gap-sm items-center justify-center"
+      className="flex flex-col gap-sm items-center justify-center hover:scale-105"
       target="_blank"
     >
       <div className="justify-center items-center flex flex-col aspect-square">
@@ -38,13 +38,14 @@ function Footer() {
             iconClass="ph-linkedin-logo"
             url={contactInfo.linkedin}
           />
-          <SocialIcon
-            title="Email"
-            iconClass="ph-envelope"
-            url={`mailto:${contactInfo.email}`}
-          />
+          <SocialIcon title="Email" iconClass="ph-envelope" url="/contact" />
         </div>
-        <p className="text-xs pt-xl">by Natália Chies</p>
+        <div className="text-xs pt-xl flex gap-xs">
+          by
+          <a href={contactInfo.github} className="font-semibold">
+            Natália Chies
+          </a>
+        </div>
       </div>
     </footer>
   );

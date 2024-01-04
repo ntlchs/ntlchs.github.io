@@ -23,20 +23,21 @@ function Header() {
             />
           </svg>
         </a>
-
-        <div className="NAV_LINKS w-full flex gap-sm text-primary-dark">
-          <Link href="/" aria-label="Home">
-            <i className="text-[1.8rem] ph-fill ph-house"></i>
-          </Link>
-          <Link href="/about-me" aria-aria-label="About Me">
-            <i className="text-[1.8rem] ph-fill ph-user"></i>
-          </Link>
-          <Link href="/projects" aria-label="Projects">
-            <i className="text-[1.8rem] ph-fill ph-cursor"></i>
-          </Link>
-          <Link href="/contact" aria-aria-label="Contact">
-            <i className="text-[1.8rem] ph-fill ph-envelope"></i>
-          </Link>
+        <div className="block">
+          <div className="NAV_LINKS w-full flex gap-sm text-primary-dark">
+            <Link href="/" aria-label="Home">
+              <i className="text-[1.8rem] ph-fill ph-house"></i>
+            </Link>
+            <Link href="/about-me" aria-label="About Me">
+              <i className="text-[1.8rem] ph-fill ph-user"></i>
+            </Link>
+            <Link href="/projects" aria-label="Projects">
+              <i className="text-[1.8rem] ph-fill ph-cursor"></i>
+            </Link>
+            <Link href="/contact" aria-label="Contact">
+              <i className="text-[1.8rem] ph-fill ph-envelope"></i>
+            </Link>
+          </div>
         </div>
       </div>
     </header>

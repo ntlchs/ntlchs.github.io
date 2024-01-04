@@ -32,6 +32,7 @@
   src: url("/assets/fonts/Merriweather-Regular.ttf") format("truetype");
   font-weight: 400; /* Regular weight */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -39,6 +40,7 @@
   src: url("/assets/fonts/Merriweather-Light.ttf") format("truetype");
   font-weight: 300; /* Light weight */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -46,6 +48,7 @@
   src: url("/assets/fonts/Merriweather-Bold.ttf") format("truetype");
   font-weight: 700; /* Bold weight */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -53,6 +56,7 @@
   src: url("/assets/fonts/Merriweather-Black.ttf") format("truetype");
   font-weight: bolder; /* Black weight */
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -60,6 +64,7 @@
   src: url("/assets/fonts/Merriweather-Italic.ttf") format("truetype");
   font-weight: 400; /* Regular weight */
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -67,6 +72,7 @@
   src: url("/assets/fonts/Merriweather-LightItalic.ttf") format("truetype");
   font-weight: 300; /* Light weight */
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -74,6 +80,7 @@
   src: url("/assets/fonts/Merriweather-BoldItalic.ttf") format("truetype");
   font-weight: 700; /* Bold weight */
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -81,6 +88,7 @@
   src: url("/assets/fonts/Merriweather-BlackItalic.ttf") format("truetype");
   font-weight: 900; /* Black weight */
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -88,6 +96,7 @@
   src: url("/assets/fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
   font-weight: 1 999; /* The range of weight this font supports */
   font-stretch: 50% 200%; /* The range of stretch this font supports */
+  font-display: swap;
 }
 
 @font-face {
@@ -97,6 +106,7 @@
   font-weight: 1 999; /* The range of weight this font supports */
   font-style: italic;
   font-stretch: 50% 200%; /* The range of stretch this font supports */
+  font-display: swap;
 }
 
 * {

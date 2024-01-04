@@ -12,6 +12,5 @@ jobs:
         uses: JakePartusch/psi-action@v1
         with:
           url: "https://ntlchs.github.io/"
-          threshold: 60
+          threshold: 80
           strategy: mobile
-          key: ${{ secrets.PSI_API_KEY }}

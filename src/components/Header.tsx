@@ -6,6 +6,7 @@ function Header() {
       <div className="flex items-center mx-auto p-sm tablet:p-md tablet:max-w-7xl px-lg justify-between">
         <a
           href="/"
+          aria-label="Home"
           className="flex items-center justify-center w-8 h-auto aspect-square"
         >
           <svg viewBox="0 0 239 260" xmlns="http://www.w3.org/2000/svg">
@@ -22,29 +23,20 @@ function Header() {
             />
           </svg>
         </a>
-        <div className="lg:block hidden">
-          <div className="DESKTOP_LINKS flex gap-md">
-            <Link href="/">Home</Link>
-            <Link href="/about-me">About Me</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="#contact">Contact</Link>
-          </div>
-        </div>
-        <div className="block lg:hidden">
-          <div className="MOBILE_LINKS w-full flex gap-sm text-primary-dark">
-            <Link href="/">
-              <i className="text-[1.8rem] ph-fill ph-house"></i>
-            </Link>
-            <Link href="/about-me">
-              <i className="text-[1.8rem] ph-fill ph-user"></i>
-            </Link>
-            <Link href="/projects">
-              <i className="text-[1.8rem] ph-fill ph-cursor"></i>
-            </Link>
-            <Link href="/contact">
-              <i className="text-[1.8rem] ph-fill ph-envelope"></i>
-            </Link>
-          </div>
+
+        <div className="NAV_LINKS w-full flex gap-sm text-primary-dark">
+          <Link href="/" aria-label="Home">
+            <i className="text-[1.8rem] ph-fill ph-house"></i>
+          </Link>
+          <Link href="/about-me" aria-aria-label="About Me">
+            <i className="text-[1.8rem] ph-fill ph-user"></i>
+          </Link>
+          <Link href="/projects" aria-label="Projects">
+            <i className="text-[1.8rem] ph-fill ph-cursor"></i>
+          </Link>
+          <Link href="/contact" aria-aria-label="Contact">
+            <i className="text-[1.8rem] ph-fill ph-envelope"></i>
+          </Link>
         </div>
       </div>
     </header>
